@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Indian Railways</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .hero {
+            background-image: url('railway-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 20px;
+        }
+        .services, .contact {
+            padding: 50px;
+            text-align: center;
+        }
+        .service-card {
+            display: inline-block;
+            width: 200px;
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Indian Railways</h1>
+        <p>Connecting India with every journey</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Train Services</a>
+        <a href="#">Booking</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Welcome to Indian Railways</h1>
+        <p>Serving the nation with punctual and comfortable train journeys</p>
+    </div>
+
+    <div class="services">
+        <h2>Our Services</h2>
+        <div class="service-card">
+            <h3>Train Booking</h3>
+            <p>Easy and quick booking for your train travels across India.</p>
+        </div>
+        <div class="service-card">
+            <h3>Online Seat Reservation</h3>
+            <p>Reserve your seat online for a comfortable journey.</p>
+        </div>
+        <div class="service-card">
+            <h3>Train Schedules</h3>
+            <p>Get the latest updates on train timings and availability.</p>
+        </div>
+    </div>
+
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Need help? Reach out to us for more information!</p>
+        <p>Email: support@indianrailways.com</p>
+        <p>Phone: 139 (Toll-Free)</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Indian Railways. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
