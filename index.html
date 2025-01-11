@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram - Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 350px;
+            background-color: white;
+            border-radius: 1px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .container img {
+            width: 175px;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3897f0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2a80d6;
+        }
+
+        .divider {
+            margin: 20px 0;
+            border: 1px solid #ddd;
+        }
+
+        .or-text {
+            font-size: 14px;
+            color: #999;
+        }
+
+        .footer-text {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .footer-text a {
+            color: #3897f0;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+        
+        <!-- Login Form -->
+        <form action="#">
+            <div class="form-group">
+                <input type="text" placeholder="Phone, email, or username" required>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <button type="submit">Log In</button>
+        </form>
+
+        <div class="divider"></div>
+        
+        <p class="or-text">OR</p>
+        
+        <div class="footer-text">
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
