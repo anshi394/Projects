@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cab Service</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 8px; border: 1px solid #ddd; text-align: center; }
+        button { padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Our Cab Service</h1>
+    <h2>Available Cabs</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Driver</th>
+                <th>Car</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for cab in cabs %}
+                <tr>
+                    <td>{{ cab.driver }}</td>
+                    <td>{{ cab.car }}</td>
+                    <td>{{ cab.status }}</td>
+                    <td>
+                        {% if cab.status == 'Available' %}
+                            <form action="/book/{{ cab.id }}" method="POST">
+                                <button type="submit">Book Cab</button>
+                            </form>
+                        {% else %}
+                            <button disabled>Unavailable</button>
+                        {% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
